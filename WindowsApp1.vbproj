@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CF7FE4F-6F95-416D-BBB7-4299A6B24CAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddExerciseForm.Designer.vb">
+      <DependentUpon>AddExerciseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddExerciseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.vb">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelForm.Designer.vb">
+      <DependentUpon>AdminPanelForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanelForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bmical.Designer.vb">
+      <DependentUpon>bmical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bmical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="exercise.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exercise.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro.Designer.vb">
+      <DependentUpon>intro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meal.Designer.vb">
+      <DependentUpon>meal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="meal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meal1.Designer.vb">
+      <DependentUpon>meal1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="meal1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\abs1.Designer.vb">
+      <DependentUpon>abs1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\abs1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\abs2.Designer.vb">
+      <DependentUpon>abs2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\abs2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\cardio1.Designer.vb">
+      <DependentUpon>cardio1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\cardio1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\cardio2.Designer.vb">
+      <DependentUpon>cardio2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\cardio2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fullbody1.Designer.vb">
+      <DependentUpon>fullbody1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\fullbody1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fullbody2.Designer.vb">
+      <DependentUpon>fullbody2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\fullbody2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\lowerbody1.Designer.vb">
+      <DependentUpon>lowerbody1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\lowerbody1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\lowerbody2.Designer.vb">
+      <DependentUpon>lowerbody2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\lowerbody2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\non.Designer.vb">
+      <DependentUpon>non.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\non.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\upperbody1.Designer.vb">
+      <DependentUpon>upperbody1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\upperbody1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\upperbody2.Designer.vb">
+      <DependentUpon>upperbody2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\upperbody2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\workout.Designer.vb">
+      <DependentUpon>workout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\workout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story.Designer.vb">
+      <DependentUpon>Story.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Story.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story1.Designer.vb">
+      <DependentUpon>Story1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Story1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veg.Designer.vb">
+      <DependentUpon>veg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="veg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddExerciseForm.resx">
+      <DependentUpon>AddExerciseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelForm.resx">
+      <DependentUpon>AdminPanelForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bmical.resx">
+      <DependentUpon>bmical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro.resx">
+      <DependentUpon>intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meal.resx">
+      <DependentUpon>meal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meal1.resx">
+      <DependentUpon>meal1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\abs1.resx">
+      <DependentUpon>abs1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\abs2.resx">
+      <DependentUpon>abs2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cardio1.resx">
+      <DependentUpon>cardio1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cardio2.resx">
+      <DependentUpon>cardio2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fullbody1.resx">
+      <DependentUpon>fullbody1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fullbody2.resx">
+      <DependentUpon>fullbody2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lowerbody1.resx">
+      <DependentUpon>lowerbody1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lowerbody2.resx">
+      <DependentUpon>lowerbody2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\non.resx">
+      <DependentUpon>non.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\upperbody1.resx">
+      <DependentUpon>upperbody1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\upperbody2.resx">
+      <DependentUpon>upperbody2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\workout.resx">
+      <DependentUpon>workout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story.resx">
+      <DependentUpon>Story.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story1.resx">
+      <DependentUpon>Story1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veg.resx">
+      <DependentUpon>veg.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="exercise.xsc">
+      <DependentUpon>exercise.xsd</DependentUpon>
+    </None>
+    <None Include="exercise.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>exercise.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="exercise.xss">
+      <DependentUpon>exercise.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home page .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registeration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\non veg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cornmeal-porridge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beetroot Smoothie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Egg Pancakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egg on Avocado Toast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken masala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish curry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Murgh Kali Mirch Ka Tikka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Murgh Malaiwala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lower body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upper body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro %283%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
